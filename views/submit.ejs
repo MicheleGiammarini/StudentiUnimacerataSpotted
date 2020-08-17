@@ -1,0 +1,30 @@
+<%- include('partials/header') %>
+
+<div class="container">
+  <div class="jumbotron centered">
+    <h2>Funzionamento:Inserisci il tuo commento preceduto da un tag e il tuo nome anonimo
+  che servira per un eventuale risposta<h2>
+  <h3>Esempio Domanda #VINAT. Quanti sono i 3 porcellini?<h3>
+    <h3>Esempio risposta #VINAT. Dipende da quanti lupi ci sono in zona <h3>
+    <h2>In caso si più domande e più risposte aggiungere un tag
+    differente per ogni attivita.<h2>
+      <h3>Esempio (Domanda) #88 Gli esami saranno online o in presenza?
+        (Risposta)#VITAT 3 sono i tre porcellini
+        (II domanda)#Dove si trova la nuova stazione del treno?<h3>
+
+    <h1 class="display-3">Spotted</h1>
+    <p class="secret-text">Condividi il tuo pensiero</p>
+
+    <form action="/submit" method="POST">
+
+      <div class="form-group">
+        <input type="text" class="form-control text-center" name="secret" placeholder="What's your secret?">
+      </div>
+      <button type="submit" class="btn btn-dark">Pubblica il tuo Spotted</button>
+    </form>
+
+
+  </div>
+</div>
+
+<%- include('partials/footer') %>
